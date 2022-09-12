@@ -1,5 +1,5 @@
 export function MyWorks() {
     return (
-        <div>My Works</div>
+        <section>My Works Page</section>
     )
 }

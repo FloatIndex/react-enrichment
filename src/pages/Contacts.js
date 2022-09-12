@@ -1,5 +1,5 @@
 export function Contacts() {
     return (
-        <div>Contacts</div>
+        <section>Contacts Page</section>
     )
 }
