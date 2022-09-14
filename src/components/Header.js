@@ -2,20 +2,17 @@ import { Link } from "react-router-dom";
 
 export function Header() {
     return (
-        <header className="header">
+        <header>
             <nav>
                 <ul>
                     <li>
-                        <Link to="/">Debora Morandi</Link>
+                        <Link to="/my-works">My Works</Link>
                     </li>
                     <li>
-                        <Link to="/about">ABOUT</Link>
+                        <Link className="bold" to="/">DEBORA MORANDI</Link>
                     </li>
                     <li>
-                        <Link to="/contacts">CONTACTS</Link>
-                    </li>
-                    <li>
-                        <Link to="/my-works">MY WORKS</Link>
+                        <Link to="/contacts">Contact Me</Link>
                     </li>
                 </ul>
             </nav>

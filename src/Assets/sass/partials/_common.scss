@@ -1,0 +1,39 @@
+@import "../variables.scss";
+
+@font-face {
+    font-family: "Alcubierre";
+    src: url(../fonts/Alcubierre.otf) format("opentype");
+}
+
+html {
+    
+    body {
+        font-family: "Alcubierre";
+        font-size: 1.5rem;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: $secondary;
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            margin: 0;
+        }
+
+    }
+}

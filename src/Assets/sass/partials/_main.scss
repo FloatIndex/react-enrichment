@@ -1,0 +1,54 @@
+main {
+
+    #first-section {
+        padding-top: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        margin-bottom: 170px;
+        background-color: $primary;
+
+        h1 {
+            font-size: 4rem;
+            margin-bottom: 30px;
+        }
+
+        h4 {
+            line-height: 2.5rem;
+        }
+
+        img.home-img {
+            width: 100%;
+            max-height: 700px;
+            object-fit: cover;
+            object-position: bottom;
+            margin-top: 70px;
+            margin-bottom: -200px;
+        }
+    }
+
+    #second-section {
+        padding: 80px 50px;
+        display: flex;
+        justify-content: space-between;
+
+        .card {
+            width: calc(80% / 3);
+            padding-bottom: calc(100% / 3);
+            border: 3px solid $border;
+
+            &:not(:last-child) {
+                margin-right: 10%;
+            }
+        }
+    }
+
+    #third-section {
+        height: 700px;
+        background-color: $tertiary;
+    }
+
+    #fourth-section {
+        height: 200px;
+    }
+    
+}
