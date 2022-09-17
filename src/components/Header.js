@@ -1,6 +1,7 @@
+import React from "react";
 import { Link } from "react-router-dom";
 
-export function Header() {
+export const Header = () => {
     return (
         <header>
             <nav>

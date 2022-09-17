@@ -30,16 +30,6 @@ main {
         padding: 80px 50px;
         display: flex;
         justify-content: space-between;
-
-        .card {
-            width: calc(80% / 3);
-            padding-bottom: calc(100% / 3);
-            border: 3px solid $border;
-
-            &:not(:last-child) {
-                margin-right: 10%;
-            }
-        }
     }
 
     #third-section {
