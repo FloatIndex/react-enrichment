@@ -2,34 +2,49 @@ main {
 
     #first-section {
         padding-top: 50px;
-        padding-left: 50px;
-        padding-right: 50px;
-        margin-bottom: 170px;
+        padding-left: 200px;
+        padding-right: 200px;
         background-color: $primary;
+        text-align: center;
 
         h1 {
-            font-size: 4rem;
-            margin-bottom: 30px;
-        }
-
-        h4 {
-            line-height: 2.5rem;
+            font-size: 3.5rem;
         }
 
         img.home-img {
             width: 100%;
-            max-height: 700px;
+            max-height: 600px;
             object-fit: cover;
             object-position: bottom;
-            margin-top: 70px;
-            margin-bottom: -200px;
+            margin: 80px 0;
         }
     }
 
     #second-section {
-        padding: 80px 50px;
+        padding: 80px 0;
+        margin: 0 50px;
         display: flex;
         justify-content: space-between;
+        align-items: center;
+        position: relative;
+        gap: 4%;
+        
+        .slider-btn {
+            position: absolute;
+            top: 50%;
+            cursor: pointer;
+            color: $secondary;
+
+            &.previous {
+                left: -25px;
+                transform: translate(-50%, -50%);
+            }
+
+            &.next {
+                right: -25px;
+                transform: translate(50%, -50%);
+            }
+        }
     }
 
     #third-section {

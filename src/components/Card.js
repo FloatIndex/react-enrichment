@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-export const Card = (props) => {
-    const { image } = props;
+export const Card = ({ image }) => {
+
     return (
-        <div className="card">
+        <div className={"card"}>
             <img src={image} alt="hotel" />
         </div>
     );
