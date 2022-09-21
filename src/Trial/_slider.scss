@@ -1,0 +1,26 @@
+#second-section {
+    padding: 80px 0;
+    margin: 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    gap: 4%;
+    
+    .slider-btn {
+        position: absolute;
+        top: 50%;
+        cursor: pointer;
+        color: $secondary;
+
+        &.previous {
+            left: -25px;
+            transform: translate(-50%, -50%);
+        }
+
+        &.next {
+            right: -25px;
+            transform: translate(50%, -50%);
+        }
+    }
+}

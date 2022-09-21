@@ -1,15 +1,16 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-export const Card = ({ image }) => {
+export const Card = ({ image, alt }) => {
 
     return (
-        <div className={"card"}>
-            <img src={image} alt="hotel" />
+        <div className="card-container">
+            <img className="card" src={image} alt={alt} />
         </div>
     );
 }
 
 Card.propTypes = {
     image: PropTypes.string,
+    alt: PropTypes.string,
 }
