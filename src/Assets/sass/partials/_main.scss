@@ -1,48 +1,45 @@
+@import "../variables.scss";
+
 main {
 
     #first-section {
         padding-top: 50px;
-        padding-left: 200px;
-        padding-right: 200px;
+        padding-left: 150px;
+        padding-right: 150px;
+        padding-bottom: 80px;
         background-color: $primary;
         text-align: center;
 
         h1 {
-            font-size: 3.5rem;
+            margin-bottom: 80px;
+            font-size: 2.2rem;
         }
 
         img.home-img {
             width: 100%;
-            max-height: 600px;
+            max-height: 700px;
             object-fit: cover;
             object-position: bottom;
-            margin: 80px 0;
         }
     }
 
     #second-section {
-        padding: 80px 50px;
+        padding-top: 80px;
+        padding-bottom: 75px;
         position: relative;
 
-        .react-multi-carousel-list {
-            overflow: visible;
+        .card-container {
+            margin: 0 30px;
 
-            .react-multi-carousel-item {
-                
-            }
+            .card {
+                width: 100%;
+                height: calc(100vw / 2.5);
+                object-fit: cover;
+                object-position: center;
+                transform: scale(0.75);
 
-            .card-container {
-                padding: 0 10px;
-
-                .card {
-                    width: 100%;
-                    height: calc(100vw / 3);
-                    object-fit: cover;
-                    object-position: center;
-
-                    &:hover {
-                        cursor: pointer;
-                    }
+                &:hover {
+                    cursor: pointer;
                 }
             }
         }
@@ -55,12 +52,12 @@ main {
             pointer-events: none;
     
             &.previous {
-                left: 100px;
+                left: calc(100% / 13);
                 transform: translate(-50%, -50%);
             }
     
             &.next {
-                right: 100px;
+                right: calc(100% / 13);
                 transform: translate(50%, -50%);
             }
         }
@@ -73,6 +70,55 @@ main {
 
     #fourth-section {
         height: 200px;
+    }
+
+    @media (max-width: $bp-smartphone) {
+        #first-section {
+            padding-top: 10px;
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-bottom: 60px;
+
+            h1 {
+                margin-bottom: 40px;
+            }
+        }
+
+        #second-section {
+            padding-top: 50px;
+            padding-bottom: 45px;
+
+            .slider-btn {
+                display: none;
+            }
+        }
+    }
+
+    @media (min-width: $bp-smartphone) and (max-width: $bp-lg) {
+        #first-section {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    }
+
+    @media (min-width: $bp-smartphone) and (max-width: $bp-xl) {
+        #first-section {
+            h1 {
+                font-size: 2.8rem;
+            }
+        }
+        
+    }
+
+    @media (min-width: $bp-xl) {
+        #first-section {
+            h1 {
+                font-size: 3rem;
+            }
+            img.home-img {
+                max-height: 700px;
+            }
+        }
     }
     
 }

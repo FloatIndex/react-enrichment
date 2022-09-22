@@ -1,3 +1,6 @@
+// FONT-SIZE FORMULA
+$font-size-formula: calc(15px + 0.390625vw);
+
 // COLORS
 $primary: #B0AF96;
 $secondary: #313016;
@@ -7,7 +10,15 @@ $black: #000;
 $white: #fff;
 
 // HEIGHTS
-$header-height: 100px;
+$header-height-tablet: 100px;
+$header-height-smartphone: 80px;
 $footer-height: 250px;
 
-// MARGIN and PADDING
+// BREAKPOINTS
+$bp-smartphone: 576px;
+$bp-tablet: 768px;
+$bp-lg: 992px;
+$bp-xl: 1200px;
+$bp-xxl: 1400px;
+
+// FONT SIZES
