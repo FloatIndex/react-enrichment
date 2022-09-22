@@ -15,18 +15,39 @@ import SLIDER_3 from "../Assets/images/slider_3.jpg";
 import SLIDER_4 from "../Assets/images/slider_4.jpg";
 import SLIDER_5 from "../Assets/images/slider_5.jpg";
 
-const cardImages = [SLIDER_1, SLIDER_2, SLIDER_3, SLIDER_4, SLIDER_5];
+const cardImages = [
+  {
+    image: SLIDER_1,
+    bgColor: "#B0AF96",
+  },
+  {
+    image: SLIDER_2,
+    bgColor: "#ecdfde",
+  },
+  {
+    image: SLIDER_4,
+    bgColor: "#ecede8",
+  },
+  {
+    image:   SLIDER_5,
+    bgColor: "#d7ceeb",
+  },
+  {
+    image: SLIDER_3,
+    bgColor: "#c2d7cf",
+  },
+];
 
 const responsive = {
   desktop: {
     breakpoint: { max: 3000, min: 1024 },
-    items: 3,
-    slidesToSlide: 3 // optional, default to 1.
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
   },
   tablet: {
     breakpoint: { max: 1024, min: 464 },
-    items: 2,
-    slidesToSlide: 2 // optional, default to 1.
+    items: 1,
+    slidesToSlide: 1 // optional, default to 1.
   },
   mobile: {
     breakpoint: { max: 464, min: 0 },
@@ -48,18 +69,23 @@ export const Home = () => {
           arrows={false}
           customTransition={"transform 500ms ease-in-out"}
           transitionDuration={500}
-          centerMode={false}
+          centerMode={true}
           draggable={true}
           focusOnSelect={true}
           infinite
           keyBoardControl
           responsive={responsive}
           shouldResetAutoplay
-          slidesToSlide={0.5}
+          slidesToSlide={3}
           swipeable
         >
           {cardImages.map((cardImage, index) => 
-            <Card  key={index} image={cardImage} alt="hotel view"/>
+            <Card
+              key={index}
+              image={cardImage.image}
+              bgColor={cardImage.bgColor}
+              alt="hotel view"
+            />
           )}
         </Carousel>
         <FontAwesomeIcon
