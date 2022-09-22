@@ -20,12 +20,57 @@ main {
             max-height: 700px;
             object-fit: cover;
             object-position: bottom;
+            border-radius: 1px;
         }
     }
 
     #second-section {
-        padding-top: 80px;
-        padding-bottom: 75px;
+        padding-top: 100px;
+        padding-left: 150px;
+        padding-right: 150px;
+
+        .text-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+
+            .text {
+                font-size: 1.2rem;
+                line-height: 2rem;
+
+                &.first {
+                    text-align: center;
+                }
+
+                &.second {
+                    text-align: center;
+                }
+            }
+
+            .arrow-container {
+                display: flex;
+
+               .arrow {
+                    border-right: 1px solid $primary;
+                    height: 2rem;
+
+                    &.left {
+                        transform: rotate(-45deg);
+                        margin-right: 1.334rem;
+                    }
+
+                    &.right {
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            
+        }
+    }
+
+    #third-section {
+        padding: 120px 0px;
         position: relative;
 
         .card-container {
@@ -63,15 +108,6 @@ main {
         }
     }
 
-    #third-section {
-        height: 700px;
-        background-color: $tertiary;
-    }
-
-    #fourth-section {
-        height: 200px;
-    }
-
     @media (max-width: $bp-smartphone) {
         #first-section {
             padding-top: 10px;
@@ -84,7 +120,7 @@ main {
             }
         }
 
-        #second-section {
+        #third-section {
             padding-top: 50px;
             padding-bottom: 45px;
 
