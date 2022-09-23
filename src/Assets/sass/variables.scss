@@ -2,9 +2,12 @@
 $font-size-formula: calc(15px + 0.390625vw);
 
 // COLORS
-$primary: #B0AF96;
+$primary: #b0af96;
+$primary-darker: #8c8c78;
+$primary-brighter: #bfbfab;
 $secondary: #313016;
-$tertiary: #f2ca9363;
+$secondary-rgb: rgb(176, 175, 150, 0.3);
+$tertiary: #f7f7f4;
 $border: #674728;
 $black: #000;
 $white: #fff;
@@ -12,7 +15,8 @@ $white: #fff;
 // HEIGHTS
 $header-height-tablet: 100px;
 $header-height-smartphone: 80px;
-$footer-height: 250px;
+$top-footer-height: 180px;
+$bottom-footer-height: 50px;
 
 // BREAKPOINTS
 $bp-smartphone: 576px;
