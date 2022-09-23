@@ -7,13 +7,13 @@ export const Header = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/my-works">My Works</Link>
+                        <Link to="/my-works">Work</Link>
                     </li>
                     <li>
                         <Link className="bold" to="/">DEBORA MORANDI</Link>
                     </li>
                     <li>
-                        <Link to="/contacts">Contact Me</Link>
+                        <Link to="/contacts">Contact</Link>
                     </li>
                 </ul>
             </nav>

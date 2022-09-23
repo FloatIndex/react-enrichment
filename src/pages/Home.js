@@ -64,27 +64,31 @@ export const Home = () => {
         <img className="home-img" src={HOME_IMG} alt="bali interior hotel" />
       </section>
 
+
       <section id="second-section">
         <div className="text-container">
           <p className="text first">
             Hospitality can advertise what a place looks like but can much less
             easily convey what it feels like to be there. Everyone has seen
             photographs of balloons flying over the temples of Bagan in Myanmar
-            but only if you have been there do you know how unreal the silence
+            but only if you have been there you know how unreal the silence
             is.
           </p>
+
           <div className="arrow-container">
             <div className="arrow left"></div>
             <div className="arrow right"></div>
           </div>
+
           <p className="text second">
-            As a photographer, my role is to not just to record what I can see
-            but to hint at what can&apos;t be seen. It is always a
+            As a photographer, my role is not just to record what I can see,
+            but to hint at what can&apos;t be seen. It&apos;s always a
             responsibility I relish as I enjoy making photographs that give a
             sense of how a location feels as well as how it looks.
           </p>
         </div>
       </section>
+
 
       <section id="third-section">
         <Carousel
@@ -110,6 +114,7 @@ export const Home = () => {
             />
           ))}
         </Carousel>
+
         <FontAwesomeIcon
           icon={solid("chevron-left")}
           className="slider-btn previous"

@@ -95,6 +95,7 @@ main {
             cursor: pointer;
             color: $white;
             pointer-events: none;
+            font-size: 1.8rem;
     
             &.previous {
                 left: calc(100% / 13);
@@ -120,6 +121,11 @@ main {
             }
         }
 
+        #second-section {
+            padding-left: 40px;
+            padding-right: 40px;
+        }
+
         #third-section {
             padding-top: 50px;
             padding-bottom: 45px;
@@ -130,8 +136,21 @@ main {
         }
     }
 
+    @media (max-width: $bp-tablet) {
+        #third-section {
+            .slider-btn {
+                display: none;
+            }
+        }
+    }
+
     @media (min-width: $bp-smartphone) and (max-width: $bp-lg) {
         #first-section {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        #second-section {
             padding-left: 50px;
             padding-right: 50px;
         }
