@@ -43,7 +43,9 @@ export const Footer = () => {
                 <span>Back to top</span>
                 <div 
                     className="scroll-to-top" 
-                    onClick={() => {window.scrollTo(0, 0)}}
+                    onClick={
+                        () => {window.scrollTo({top: 0, left: 0, behavior: "smooth"})}
+                    }
                 >
                     <FontAwesomeIcon icon={solid("arrow-up")} />
                 </div>
