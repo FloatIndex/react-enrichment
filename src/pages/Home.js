@@ -58,7 +58,7 @@ const responsive = {
 
 export const Home = () => {
   return (
-    <>
+    <main id="home">
       <section id="first-section">
         <h1>One perfect photo is worth hundreds of bookings.</h1>
         <img className="home-img" src={HOME_IMG} alt="bali interior hotel" />
@@ -126,6 +126,6 @@ export const Home = () => {
           size="lg"
         />
       </section>
-    </>
+    </main>
   );
 };

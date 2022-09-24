@@ -9,9 +9,7 @@ export const StandardLayout = () => {
     return (
         <>
             <Header />
-            <main>
-                <Outlet />
-            </main>
+            <Outlet />
             <Footer />
         </>
     )

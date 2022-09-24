@@ -5,7 +5,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 // my components
 import { Home } from "./Home";
 import { Contacts } from "./Contacts";
-import { MyWorks } from "./MyWorks";
+import { MyWork } from "./MyWork";
 import { StandardLayout } from "../layout/StandardLayout";
 
 // style
@@ -19,7 +19,7 @@ export class App extends React.Component {
                     <Route path="/" element={<StandardLayout />}>
                         <Route path="/" element={<Home />}/>
                         <Route path="/contacts" element={<Contacts />}/>
-                        <Route path="/my-works" element={<MyWorks />}/>
+                        <Route path="/my-work" element={<MyWork />}/>
                     </Route>
                 </Routes>
             </BrowserRouter>

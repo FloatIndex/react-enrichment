@@ -7,7 +7,7 @@ export const Header = () => {
             <nav>
                 <ul>
                     <li>
-                        <Link to="/my-works">Work</Link>
+                        <Link to="/my-work">Work</Link>
                     </li>
                     <li>
                         <Link className="bold" to="/">DEBORA MORANDI</Link>
