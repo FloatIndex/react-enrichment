@@ -1,0 +1,63 @@
+@import "../variables.scss";
+
+#my-work {
+    margin: 100px 50px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 6rem;
+
+    .row {
+        display: flex;
+        justify-content: space-between;
+
+        .container {
+            width: 55vw;
+            height: calc(85vw / 2.5);
+            background-color: $tertiary;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .row {
+                width: 100%;
+                height: 45%;
+
+                .rectangle {
+                    width: 48%;
+                    height: 100%;
+                    border: 1px solid $primary-brighter;
+                }
+            }
+        }
+
+        .small-vertical {
+            width: calc(35vw / 2);
+            height: calc(85vw / 2.5);
+            border: 1px solid $primary-brighter;
+            background-color: $secondary-rgb;
+        }
+
+        .square {
+            width: calc(90vw / 2);
+            height: calc(90vw / 2);
+            border: 1px solid $primary-brighter;
+            background-color: $tertiary;
+        }
+    }
+
+    // @media screen and (max-width: $bp-xl) {
+    //     .container {
+    //         width: 55vw;
+    //         height: calc(85vw / 2.5);
+    //         border: 1px solid $primary-brighter;
+    //         background-color: $tertiary;
+    //     }
+
+    //     .small-vertical {
+    //         width: calc(35vw / 2);
+    //         height: calc(85vw / 2.5);
+    //         border: 1px solid $primary-brighter;
+    //         background-color: $secondary-rgb;
+    //     }
+    // }
+}
