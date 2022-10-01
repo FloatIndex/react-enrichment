@@ -1,9 +1,11 @@
 import React from "react";
 
-export const Contacts = () => {
+const Contacts = () => {
     return (
         <section id="contacts">
             Contacts Page
         </section>
     )
 }
+
+export default Contacts;

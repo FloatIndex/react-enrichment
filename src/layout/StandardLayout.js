@@ -1,11 +1,11 @@
 import React from "react";
+import { Outlet } from "react-router-dom";
 
 // my components
-import { Outlet } from "react-router-dom";
-import { Footer } from "../components/Footer";
-import { Header } from "../components/Header";
+import Footer from "../components/Footer";
+import Header from "../components/Header";
 
-export const StandardLayout = () => {
+const StandardLayout = () => {
     return (
         <>
             <Header />
@@ -14,3 +14,5 @@ export const StandardLayout = () => {
         </>
     )
 }
+
+export default StandardLayout;

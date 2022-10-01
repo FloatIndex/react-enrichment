@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
 
-export const Card = ({ bgColor, image, alt }) => {
+const Card = ({ bgColor, image, alt }) => {
 
     return (
         <div
@@ -17,3 +17,5 @@ Card.propTypes = {
     alt: PropTypes.string,
     bgColor: PropTypes.string,
 }
+
+export default Card;

@@ -1,6 +1,6 @@
 import React from "react";
 
-export const MyWork = () => {
+const MyWork = () => {
     return (
         <main id="my-work">
             <div className="row">
@@ -25,3 +25,5 @@ export const MyWork = () => {
         </main>
     )
 }
+
+export default MyWork;

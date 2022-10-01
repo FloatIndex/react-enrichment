@@ -5,15 +5,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid } from "@fortawesome/fontawesome-svg-core/import.macro";
 
 // my components
-import { Card } from "../components/Card";
+import Card from "../components/Card";
 
 // images
-import HOME_IMG from "../Assets/images/home_image.jpg";
-import SLIDER_1 from "../Assets/images/slider_1.jpg";
-import SLIDER_2 from "../Assets/images/slider_2.jpg";
-import SLIDER_3 from "../Assets/images/slider_3.jpg";
-import SLIDER_4 from "../Assets/images/slider_4.jpg";
-import SLIDER_5 from "../Assets/images/slider_5.jpg";
+import HOME_IMG from "../assets/images/home_image.jpg";
+import SLIDER_1 from "../assets/images/slider_1.jpg";
+import SLIDER_2 from "../assets/images/slider_2.jpg";
+import SLIDER_3 from "../assets/images/slider_3.jpg";
+import SLIDER_4 from "../assets/images/slider_4.jpg";
+import SLIDER_5 from "../assets/images/slider_5.jpg";
 
 const cardImages = [
   {
@@ -56,7 +56,7 @@ const responsive = {
   },
 };
 
-export const Home = () => {
+const Home = () => {
   return (
     <main id="home">
       <section id="first-section">
@@ -129,3 +129,5 @@ export const Home = () => {
     </main>
   );
 };
+
+export default Home;

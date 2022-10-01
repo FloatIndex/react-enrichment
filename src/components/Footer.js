@@ -2,7 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { solid, brands } from "@fortawesome/fontawesome-svg-core/import.macro";
 
-export const Footer = () => {
+const Footer = () => {
     return (
         <footer className="footer">
             <div className="top-footer">
@@ -53,3 +53,5 @@ export const Footer = () => {
         </footer>
     )
 }
+
+export default Footer;
